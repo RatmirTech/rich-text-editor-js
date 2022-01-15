@@ -6,14 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Document</title>
+  <title>Rich Text Editor</title>
 </head>
 
 <body>
   <div class="main-content">
     <div class="text-editor-header">
-      <button type="button" class="btn" data-element="bold">
+      <button type="button" class="btn element-editor" data-element="bold">
         <i class="fa fa-bold"></i>
+      </button>
+      <button type="button" class="btn element-editor" data-element="italic">
+        <i class="fa fa-italic"></i>
+      </button>
+      <button type="button" class="btn element-editor" data-element="underline">
+        <i class="fa fa-underline"></i>
+      </button>
+      <button type="button" class="btn element-editor" data-element="insertUnorderedList">
+        <i class="fa fa-list-ol"></i>
+      </button>
+      <button type="button" class="btn element-editor" data-element="insertOrderedList">
+        <i class="fa fa-list-ul"></i>
+      </button>
+      <button type="button" class="btn element-editor" data-element="createLink">
+        <i class="fa fa-link"></i>
       </button>
     </div>
     <div class="content" contenteditable="true"></div>
