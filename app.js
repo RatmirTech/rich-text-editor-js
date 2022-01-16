@@ -1,5 +1,5 @@
 const elements = document.querySelectorAll('.btn');
-
+const btnh1 = document.querySelector('.btnH1')
 elements.forEach(element => {
   element.addEventListener('click', () => {
     let command = element.dataset['element'];

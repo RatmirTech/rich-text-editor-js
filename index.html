@@ -22,19 +22,49 @@
         <i class="fa fa-underline"></i>
       </button>
       <button type="button" class="btn element-editor" data-element="insertUnorderedList">
-        <i class="fa fa-list-ol"></i>
+        <i class="fa fa-list-ul"></i>
       </button>
       <button type="button" class="btn element-editor" data-element="insertOrderedList">
-        <i class="fa fa-list-ul"></i>
+        <i class="fa fa-list-ol"></i>
       </button>
       <button type="button" class="btn element-editor" data-element="createLink">
         <i class="fa fa-link"></i>
       </button>
+      <button type="button" class="btn element-editor" data-element="unlink">
+        <i class="fa fa-unlink"></i>
+      </button>
+      <button type="button" class="btn element-editor" data-element="subscript">
+        <i class="fa fa-subscript"></i>
+      </button>
+      <button type="button" class="btn element-editor" data-element="superscript">
+        <i class="fa fa-superscript"></i>
+      </button>
+      <button type="button" class="btn element-editor" data-element="undo">
+        <i class="fa fa-undo"></i>
+      </button>
+      <button type="button" class="btn element-editor" data-element="insertHorizontalRule">
+        <i class="fa fa-ruler-horizontal"></i>
+      </button>
     </div>
-    <div class="content" contenteditable="true"></div>
+    <div class="content" contenteditable="true">
+      <div id="valueContent">
+        <h1>Title</h1>
+        <b>Hello </b>
+      </div>
+    </div>
+  </div>
+  <button class="btnPreview" id="btnPreview">View preview</button>
+  <div class="preview-content" id="previewContent">
+
   </div>
   <script src="app.js"></script>
   <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+  <script>
+    btnPreview.onclick = () => previewContent.innerHTML = valueContent.innerHTML
+  </script>
+  <script>
+
+  </script>
 </body>
 
 </html>
